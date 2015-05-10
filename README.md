@@ -37,3 +37,12 @@ anything with them that the logging module allows and mix freely.
     >>> import easylog
     >>> log = easylog.get("logger_name") # must have been Initialized before!
     >>> log.info("This also goes to log/debuglog.txt")
+
+#### Installation
+
+To install the latest version:
+
+    pip install https://github.com/hbsdev/easylog/archive/master.zip#egg=easylog --upgrade
+
+You can now `import easylog` like in the examples.
+
