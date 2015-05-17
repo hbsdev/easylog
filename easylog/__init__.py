@@ -16,7 +16,6 @@ def create(
   level=None,
   path=None, # if given create a file logger
 ):
-
   import logging
   if path is None:
     # CONSOLE LOGGER:
@@ -35,3 +34,9 @@ def create(
   LOGGERS.append(logger_name)
   return log
 
+def get(logger_name):
+  if not logger_name in LOGGERS:
+    return None
+  import logging
+  return logging.getLogger(logger_name)
+  
