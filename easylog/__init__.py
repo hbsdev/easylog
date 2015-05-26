@@ -24,10 +24,11 @@ def create(
     # FILE LOGGER:
     # Create file handler if filenam given
     handler = logging.FileHandler(path)
-  handler.setLevel(LEVELS[level])
+  #handler.setLevel(LEVELS[level])
   formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
   handler.setFormatter(formatter)
   log = logging.getLogger(logger_name)
+  log.setLevel(LEVELS[level])
 
   # add the handlers to the logger
   log.addHandler(handler)
