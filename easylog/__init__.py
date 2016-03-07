@@ -13,7 +13,7 @@ LEVELS={
 
 def create(
   logger_name,
-  level=None,
+  level='ERROR',
   path=None, # if given create a file logger
 ):
   import logging
